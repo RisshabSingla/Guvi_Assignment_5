@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-wrap justify-center lg:justify-between my-12">
+          <!-- Contact Info Section -->
+
+          <div class="w-full lg:w-5/12 my-4 p-4">
+            <div class="mt-5">
+              <h1 class="text-2xl font-bold mb-4">Contact Us</h1>
+              <p class="text-gray-600 mb-4">
+                Let us know your queries, feedback, and enquiries. We are here
+                to support you 24/7.
+              </p>
+              <hr class="mb-4" />
+
+              <!-- Phone Section -->
+              <div class="flex items-center my-6">
+                <div class="bg-gray-200 p-4 rounded-full mr-4">
+                  <span class="text-green-600 font-semibold text-xl">📞</span>
+                </div>
+                <div>
+                  <p class="text-gray-600">Give us a call</p>
+                  <p class="font-semibold">+91 9736097320</p>
+                </div>
+              </div>
+              <hr class="mb-4" />
+
+              <!-- Email Section -->
+              <div class="flex items-center my-6">
+                <div class="bg-gray-200 p-4 rounded-full mr-4">
+                  <span class="text-green-600 font-semibold text-xl">✉️</span>
+                </div>
+                <div>
+                  <p class="text-gray-600">Write to us</p>
+                  <p class="font-semibold">cs@guvi.in</p>
+                </div>
+              </div>
+
+              <hr class="mb-4" />
+              <!-- Address Section -->
+              <div class="my-6">
+                <div class="flex items-start mb-4">
+                  <div class="bg-gray-200 p-4 rounded-full mr-4">
+                    <span class="text-green-600 font-semibold text-xl">📍</span>
+                  </div>
+                  <div>
+                    <p class="text-gray-600">Visit us in Chennai @</p>
+                    <p class="font-semibold">
+                      IITM Research Park - Phase 2, Module #9, 3rd Floor, D
+                      Block, Kanagam Rd, Tharamani, Chennai, Tamil Nadu 600113
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="pl-14">
+                    <p class="text-gray-600">Visit us in Noida @</p>
+                    <p class="font-semibold">
+                      A11, HCL Corporation Pvt. Ltd, Block A, Sector 3, Noida,
+                      Uttar Pradesh 201307
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="mb-4" />
+            </div>
+          </div>
+
+          <!-- Contact Form Section -->
+          <div class="w-full lg:w-5/12 my-4 p-4 rounded-xl border-2 shadow-2xl">
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold mb-5">
+                Say <span class="text-green-500">Hello!</span>
+              </h2>
+              <p class="text-gray-600 mb-6">Feel free to stop by and say hi!</p>
+
+              <form id="formContainer" class="space-y-4">
+                <!-- Name -->
+                <div>
+                  <label for="name" class="block text-gray-700"
+                    >Name <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    class="block w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label for="email" class="block text-gray-700"
+                    >E-mail id <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    class="block w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
+                </div>
+
+                <!-- Phone -->
+                <div>
+                  <label for="phone" class="block text-gray-700"
+                    >Contact Number <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    required
+                    pattern="[1-9]{1}[0-9]{9}"
+                    class="block w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
+                </div>
+
+                <!-- Subject -->
+                <div>
+                  <label for="subject" class="block text-gray-700"
+                    >Subject <span class="text-red-500">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    required
+                    class="block w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
+                </div>
+
+                <!-- Message -->
+                <div>
+                  <label for="message" class="block text-gray-700"
+                    >Message <span class="text-red-500">*</span></label
+                  >
+                  <textarea
+                    id="message"
+                    required
+                    class="block w-full mt-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                    rows="4"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="w-full bg-green-500 text-white py-2 rounded"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
